@@ -123,7 +123,7 @@ public class UserRestController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @PostMapping("/admin/edit")
+    @PutMapping("/admin/edit")
     public ResponseEntity<?> editUser(@RequestBody UserDto userDto) {
         try {
 
@@ -135,7 +135,7 @@ public class UserRestController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @PostMapping("/admin/delete")
+    @DeleteMapping("/admin/delete")
     public ResponseEntity<?> deleteUser(@RequestBody UserDto userDto) {
         //корректности ради
         try {
