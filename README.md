@@ -23,17 +23,29 @@
 Модель данных
 
 roles:
+
 Long id; PK
+
 String name;
 
+
 user:
+
 Long id; PK
+
 String login; - уникальный
+
 String firstName; - ограничение на пустоту
+
 String lastName; - ограничение на пустоту
+
 String password; - ограничение на пустоту
+
 Long money; - ограничение на значение: может иметь значение только больше или равно 0
 
+
 user_role:
+
 user_id - FK на user.id
+
 role_id - FK на role.id
